@@ -1,3 +1,2 @@
 #!/bin/bash
-home_directory=$(grep "^$(whoami):" /etc/passwd | cut -d':' -f6)
-echo "$home_directory";
+grep "^$(whoami):" /etc/passwd | cut -d':' -f6
